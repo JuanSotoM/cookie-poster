@@ -94,6 +94,36 @@ h1 {
     margin-bottom: 10px;
 }
 
+.footer-link-row {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.github-mini-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 26px;
+    padding: 0 8px;
+    border-radius: 7px;
+    border: 1px solid #d6e1ef;
+    background: rgba(255, 255, 255, 0.75);
+    color: #5f7489;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    transition:
+        transform 0.16s ease,
+        filter 0.16s ease;
+}
+
+.github-mini-link:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.02);
+    color: #445f78;
+}
+
 .settings-form {
     display: grid;
     gap: 7px;

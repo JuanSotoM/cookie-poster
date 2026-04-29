@@ -4,6 +4,10 @@ Browser extension to send cookies from the active tab to a configured POST endpo
 
 This tool is intended for developers only.
 
+## GitHub
+
+- Source code: https://github.com/JuanSotoM/cookie-poster
+
 ## Why this can be necessary
 
 - Validate authenticated integrations without manually copying cookies each time.
