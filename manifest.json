@@ -1,6 +1,6 @@
 {
     "name": "Cookie-Poster",
-    "description": "Open-source extension for developers to test authenticated cookie flows during local integration and API debugging; it does not track users and does not store browsing history.",
+    "description": "Open-source developer extension for testing authenticated cookie flows, without tracking users or storing browsing history",
     "version": "0.0.1",
     "manifest_version": 3,
     "permissions": ["activeTab", "tabs", "cookies", "storage", "notifications"],

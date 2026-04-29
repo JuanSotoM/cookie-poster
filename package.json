@@ -5,6 +5,7 @@
     "packageManager": "pnpm@10.13.1",
     "scripts": {
         "build": "tsc -p tsconfig.json",
+        "deploy": "pnpm build && node scripts/deploy.mjs",
         "watch": "tsc -w -p tsconfig.json",
         "typecheck": "tsc --noEmit -p tsconfig.json"
     },
