@@ -1,0 +1,32 @@
+{
+    "name": "Cookie-Poster",
+    "description": "Open-source extension for developers to test authenticated cookie flows during local integration and API debugging; it does not track users and does not store browsing history.",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "tabs", "cookies", "storage", "notifications"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+        "default_popup": "src/popup/popup.html",
+        "default_icon": {
+            "16": "src/assets/icon-16.png",
+            "32": "src/assets/icon-32.png",
+            "48": "src/assets/icon-48.png",
+            "128": "src/assets/icon-128.png"
+        }
+    },
+    "options_ui": {
+        "page": "src/options/options.html",
+        "open_in_tab": true
+    },
+    "icons": {
+        "16": "src/assets/icon-16.png",
+        "32": "src/assets/icon-32.png",
+        "48": "src/assets/icon-48.png",
+        "128": "src/assets/icon-128.png"
+    },
+    "incognito": "split",
+    "background": {
+        "service_worker": "build/background/service-worker.js",
+        "type": "module"
+    }
+}

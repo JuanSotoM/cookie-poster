@@ -1,0 +1,24 @@
+{
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "es2020",
+        "moduleResolution": "bundler",
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "rootDir": "./src",
+        "outDir": "build",
+        "strict": true,
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "sourceMap": true,
+        "lib": ["ES2020", "DOM"],
+        "types": ["chrome"]
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "public", "build"]
+}

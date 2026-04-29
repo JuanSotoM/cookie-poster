@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Configuracion</title>
+        <link rel="stylesheet" href="options.css" />
+        <script src="../../build/options/options.js" type="module" defer></script>
+    </head>
+    <body>
+        <div class="ambient"></div>
+        <main class="settings-card">
+            <header class="hero">
+                <p class="eyebrow">COOKIE POSTER</p>
+                <h1>Configuracion de Cookie Poster</h1>
+                <p class="hero-copy">Administra destinos para pruebas de integracion, QA y debug de sesiones.</p>
+            </header>
+
+            <div class="toolbar">
+                <button id="addProfileButton" type="button">Anadir nuevo</button>
+            </div>
+
+            <form id="settingsForm" class="settings-form hidden">
+                <label for="profileName">Nombre</label>
+                <input id="profileName" name="profileName" type="text" placeholder="Ejemplo: Cliente A" required />
+
+                <label for="profileDomain">Dominio</label>
+                <input id="profileDomain" name="profileDomain" type="text" placeholder="ejemplo.com" required />
+
+                <label for="postUrl">URL del POST</label>
+                <input id="postUrl" name="postUrl" type="url" placeholder="http://localhost:3000" required />
+
+                <label for="postToken">Token</label>
+                <input id="postToken" name="postToken" type="text" placeholder="Bearer token" />
+
+                <div class="actions-row">
+                    <button type="submit">Guardar perfil</button>
+                    <button id="cancelButton" type="button" class="secondary">Cancelar</button>
+                </div>
+            </form>
+
+            <section class="profiles-section">
+                <h2>Perfiles guardados</h2>
+                <p id="emptyState" class="empty">Aun no hay perfiles configurados.</p>
+                <ul id="profilesList" class="profiles-list"></ul>
+            </section>
+
+            <p id="status" class="status" aria-live="polite"></p>
+        </main>
+    </body>
+</html>
